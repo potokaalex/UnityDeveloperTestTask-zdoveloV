@@ -2,9 +2,10 @@
 
 TODO:
     GameCanvas:
-        Design
-        ViewLogic
         Create/Destroy logic
+        ViewLogic
         PresenterLogic
-        Optimizations: ui components flags, textures import, text import.
+        Optimizations: ui components enable/disable, textures import, font import.
+        Safe area & platforms tests
+    InputService
     GameEnvironmentDesign

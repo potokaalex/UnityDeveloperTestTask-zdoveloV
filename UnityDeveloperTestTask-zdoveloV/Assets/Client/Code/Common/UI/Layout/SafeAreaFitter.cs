@@ -1,4 +1,4 @@
-﻿using Client.Code.Common.Services.Unity;
+﻿using Client.Code.Common.Data;
 using UnityEngine;
 
 namespace Client.Code.Common.UI.Layout

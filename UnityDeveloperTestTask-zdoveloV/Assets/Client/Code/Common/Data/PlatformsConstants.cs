@@ -1,4 +1,4 @@
-﻿namespace Client.Code.Common.Services.Unity
+﻿namespace Client.Code.Common.Data
 {
     public static class PlatformsConstants
     {
