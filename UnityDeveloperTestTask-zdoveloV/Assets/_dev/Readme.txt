@@ -1,3 +1,5 @@
+со шрифтом не угадал.
+
 TODO:
     GameCanvas:
         Design
