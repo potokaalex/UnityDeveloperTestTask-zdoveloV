@@ -4,5 +4,5 @@ TODO:
         ViewLogic
         Create/Destroy logic
         PresenterLogic
-        Optimizations
+        Optimizations: ui components flags, textures import, text import.
     GameEnvironmentDesign
