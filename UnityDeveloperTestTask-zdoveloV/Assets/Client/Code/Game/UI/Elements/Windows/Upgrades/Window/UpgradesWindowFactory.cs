@@ -45,7 +45,12 @@ namespace Client.Code.Game.UI.Elements.Windows.Upgrades.Window
         {
             var data = _provider.Items[type];
             var item = _instantiator.InstantiatePrefabForComponent<UpgradeItemView>(data.Prefab, _window.ItemsRoot);
-            item.Initialize(data); //кнопки покупки нужно залочить!
+            item.Initialize(data);
+            item.PurchaseButton.Initialize(type);
+            
+            //TODO: connect with a currency!
+            if (type == ItemType.BiggerPortion)
+                item.PurchaseButton.Lock(true);
         }
     }
 }

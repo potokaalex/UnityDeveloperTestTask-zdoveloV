@@ -8,13 +8,19 @@ namespace Client.Code.Common.UI.Elements.Buttons
     {
         private Button _baseButton;
 
-        private void Awake()
+        protected Button BaseButton
         {
-            _baseButton = gameObject.GetComponent<Button>();
-            _baseButton.onClick.AddListener(OnClick);
+            get
+            {
+                if (!_baseButton)
+                    _baseButton = gameObject.GetComponent<Button>();
+                return _baseButton;
+            }
         }
 
-        private void OnDestroy() => _baseButton.onClick.RemoveListener(OnClick);
+        private void Awake() => BaseButton.onClick.AddListener(OnClick);
+
+        private void OnDestroy() => BaseButton.onClick.RemoveListener(OnClick);
 
         protected abstract void OnClick();
     }

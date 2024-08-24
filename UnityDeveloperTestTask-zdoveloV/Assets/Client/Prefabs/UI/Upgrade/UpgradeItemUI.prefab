@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4788834731659921763}
   - component: {fileID: 9100431723311627244}
   - component: {fileID: 4786234254013724685}
+  - component: {fileID: 6449818317954854770}
   m_Layer: 5
   m_Name: PurchaseButton
   m_TagString: Untagged
@@ -142,6 +143,24 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: 1
   m_LayoutPriority: 1
+--- !u!114 &6449818317954854770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594589218571917929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6425d98a345543279d75d1e54731f07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _image: {fileID: 4788834731659921763}
+  _defaultImageSprite: {fileID: 1516660515, guid: 00d490f05c070954dbf395a265f07756, type: 3}
+  _lockedImageSprite: {fileID: 1237774841, guid: ca70bb17f34c6dc41968ccfbb55d3bbc, type: 3}
+  _text: {fileID: 2023374482149681835}
+  _defaultTextMaterial: {fileID: 7760678116604106016, guid: a27ec25483d24154f8086bb2d17b11cc, type: 2}
+  _lockedTextMaterial: {fileID: 2100000, guid: 46a9411588d5095478f78934e42a4b65, type: 2}
 --- !u!1 &1623269255595662541
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,8 +756,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 70T
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a27ec25483d24154f8086bb2d17b11cc, type: 2}
+  m_sharedMaterial: {fileID: 7760678116604106016, guid: a27ec25483d24154f8086bb2d17b11cc, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -922,6 +941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38300fc35c8c4b16bd90ba253cadf8a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PurchaseButton: {fileID: 6449818317954854770}
   _headerText: {fileID: 8083220132696980260}
   _descriptionText: {fileID: 7419843540634821291}
   _icon: {fileID: 2905409238649254404}

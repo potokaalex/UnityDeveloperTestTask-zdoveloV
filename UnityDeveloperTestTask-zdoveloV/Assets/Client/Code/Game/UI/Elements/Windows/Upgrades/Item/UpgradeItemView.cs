@@ -1,4 +1,5 @@
 ﻿using Client.Code.Common.UI.Elements.Currency;
+using Client.Code.Game.UI.Elements.Buttons.Purchase;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,6 +8,8 @@ namespace Client.Code.Game.UI.Elements.Windows.Upgrades.Item
 {
     public class UpgradeItemView : MonoBehaviour
     {
+        public ItemPurchaseButton PurchaseButton;
+
         [SerializeField] private TextMeshProUGUI _headerText;
         [SerializeField] private TextMeshProUGUI _descriptionText;
         [SerializeField] private Image _icon;
