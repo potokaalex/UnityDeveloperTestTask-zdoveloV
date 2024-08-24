@@ -21,5 +21,6 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  Upgrades: {fileID: 11400000, guid: 5e09aa25533bdf949b640a0469199e3e, type: 2}
   CanvasPrefab: {fileID: 8852128740030207613, guid: 3608c326f8822ac42aab2a9ce36509a1, type: 3}
+  UpgradesWindowPrefab: {fileID: 6770180615195237265, guid: a35e67db2a3f17243a83b38c273091b4, type: 3}
+  UpgradesItemPrefab: {fileID: 6144787887333614203, guid: 2b35527057255df4b8a48b105a728075, type: 3}

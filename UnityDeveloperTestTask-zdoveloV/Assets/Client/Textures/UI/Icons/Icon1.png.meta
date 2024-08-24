@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Icon1_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 9
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726f8b60b956ed64099d153c4a23f9c2
+      internalID: 1264602516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +153,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Icon1_0: 1264602516
+      Icon1_1: -1580482707
+      Icon1_2: -209523483
+      Icon1_3: -2111043248
+      Icon1_4: -852351969
+      Icon1_5: 981448025
+      Icon1_6: 1117165156
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

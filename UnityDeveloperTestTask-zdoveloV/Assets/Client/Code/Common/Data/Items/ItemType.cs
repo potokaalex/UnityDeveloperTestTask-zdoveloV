@@ -1,7 +1,8 @@
-﻿namespace Client.Code.Game.UI.Elements.Upgrades
+﻿namespace Client.Code.Common.Data.Items
 {
-    public enum UpgradeItemType
+    public enum ItemType
     {
+        //Upgrades
         WatchATutorial = 1, 
         MadeWithLove = 2, 
         MaturedForLonger = 3, 

@@ -1,4 +1,6 @@
-﻿using Client.Code.Common.Services.Assets;
+﻿using Client.Code.Common.Data;
+using Client.Code.Common.Services.Assets;
+using Client.Code.Common.Services.Assets.Base;
 using UnityEngine;
 using Zenject;
 
@@ -8,6 +10,18 @@ namespace Client.Code.Common.Infrastructure
     {
         [SerializeField] private AssetsConfig _assetsConfig;
 
-        public override void InstallBindings() => Container.Bind<AssetsLoader>().AsSingle().WithArguments(_assetsConfig);
+        public override void InstallBindings()
+        {
+            BindAssets();
+
+            Container.BindInterfacesTo<Bootstrapper>().AsSingle();
+        }
+
+        private void BindAssets()
+        {
+            Container.Bind<AssetsLoader>().AsSingle().WithArguments(_assetsConfig);
+            Container.Bind<ProjectAssetsLoader>().AsSingle();
+            Container.Bind<ProjectAssetsProvider>().AsSingle();
+        }
     }
 }

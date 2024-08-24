@@ -6,7 +6,7 @@ namespace Client.Code.Game.UI.Elements.Currency
     [Serializable]
     public class CurrencyViewData
     {
-        public int Value;
+        public long Value;
         public Sprite Icon;
     }
 }

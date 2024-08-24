@@ -1,4 +1,5 @@
-﻿using Client.Code.Common.UI.Base.Window;
+﻿using Client.Code.Common.Data.Items;
+using Client.Code.Common.UI.Base.Window;
 using Client.Code.Game.UI.Elements.Upgrades.Item;
 using Zenject;
 
@@ -30,7 +31,7 @@ namespace Client.Code.Game.UI.Elements.Upgrades.Window
 
         private void CreateNewWindow()
         {
-            var prefab = _provider.Config.Prefab;
+            var prefab = _provider.WindowPrefab;
             _window = _instantiator.InstantiatePrefabForComponent<UpgradesWindow>(prefab, _provider.WindowRoot);
             _window.ForceClose();
 
@@ -40,12 +41,12 @@ namespace Client.Code.Game.UI.Elements.Upgrades.Window
 
         public void Destroy() => _window.Close();
 
-        private void CreateItem(UpgradeItemType type)
+        private void CreateItem(ItemType type)
         {
-            var data = _provider.Config.ItemsData[type];
-            var prefab = _provider.Config.ItemPrefab;
-            var item = _instantiator.InstantiatePrefabForComponent<UpgradeItemView>(prefab, _window.ItemsRoot);
-            item.Initialize(data);
+            var data = _provider.Items[type];
+            var item = _instantiator.InstantiatePrefabForComponent<UpgradeItemView>(data.Prefab, _window.ItemsRoot);
+            //item.Initialize(data);
+            //item.Price.Initialize(data.Price);
         }
     }
 }

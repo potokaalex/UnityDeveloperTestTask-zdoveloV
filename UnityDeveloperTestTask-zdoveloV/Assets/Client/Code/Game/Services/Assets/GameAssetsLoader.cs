@@ -1,4 +1,5 @@
 ﻿using Client.Code.Common.Services.Assets;
+using Client.Code.Common.Services.Assets.Base;
 using Client.Code.Game.Data;
 
 namespace Client.Code.Game.Services.Assets

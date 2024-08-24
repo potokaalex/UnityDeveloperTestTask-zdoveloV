@@ -382,6 +382,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6804593335302640966}
   - component: {fileID: 563882557616009509}
+  - component: {fileID: 54696279450239165}
   m_Layer: 5
   m_Name: PriceRoot
   m_TagString: Untagged
@@ -436,6 +437,20 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &54696279450239165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3311451301624532256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f533a1b258544487b925b3f2a927790b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _text: {fileID: 2023374482149681835}
+  _icon: {fileID: 6177536408219530662}
 --- !u!1 &4218331723697896050
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,6 +922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38300fc35c8c4b16bd90ba253cadf8a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Price: {fileID: 54696279450239165}
   _headerText: {fileID: 8083220132696980260}
   _descriptionText: {fileID: 7419843540634821291}
   _icon: {fileID: 2905409238649254404}
@@ -976,7 +992,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6cf2dc400c11ec4419fcc6d6a4cdc506, type: 3}
+  m_Sprite: {fileID: 1638413657, guid: 6cf2dc400c11ec4419fcc6d6a4cdc506, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
