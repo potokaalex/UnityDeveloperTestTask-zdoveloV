@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using Client.Code.Common.Data.Items;
 using Client.Code.Common.Services.Assets;
+using Client.Code.Game.Services;
 using Client.Code.Game.Services.Assets;
-using Client.Code.Game.Services.Extensions;
 using Client.Code.Game.UI.Elements.Upgrades;
 using Client.Code.Game.UI.Elements.Upgrades.Item;
 using Client.Code.Game.UI.Elements.Upgrades.Window;
@@ -13,13 +13,13 @@ namespace Client.Code.Game.UI
     public class GameUIProvider : IUpgradesUIProvider
     {
         private readonly GameAssetsProvider _assetsProvider;
-        private readonly ProjectAssetsProvider _projectAssetsProvider;
+        private readonly UpgradeItemDataFactory _upgradeItemDataFactory;
         private Dictionary<ItemType, UpgradeItemViewData> _upgradeItemsViewData;
 
-        public GameUIProvider(GameAssetsProvider assetsProvider, ProjectAssetsProvider projectAssetsProvider)
+        public GameUIProvider(GameAssetsProvider assetsProvider, UpgradeItemDataFactory upgradeItemDataFactory)
         {
             _assetsProvider = assetsProvider;
-            _projectAssetsProvider = projectAssetsProvider;
+            _upgradeItemDataFactory = upgradeItemDataFactory;
         }
 
         public Transform WindowRoot { get; private set; }
@@ -31,7 +31,7 @@ namespace Client.Code.Game.UI
         public void Initialize(Transform windowRoot)
         {
             WindowRoot = windowRoot;
-            _upgradeItemsViewData = _projectAssetsProvider.Config.Items.Upgrade.ToView(_assetsProvider.UI.UpgradesItemPrefab);
+            _upgradeItemsViewData = _upgradeItemDataFactory.CreateViewData();
         }
     }
 }

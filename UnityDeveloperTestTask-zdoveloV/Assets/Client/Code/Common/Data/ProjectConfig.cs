@@ -1,5 +1,5 @@
-﻿using Client.Code.Common.Data.Items;
-using Client.Code.Common.Services.Assets;
+﻿using Client.Code.Common.Data.Currency;
+using Client.Code.Common.Data.Items;
 using Client.Code.Common.Services.Assets.Base;
 using UnityEngine;
 
@@ -9,5 +9,6 @@ namespace Client.Code.Common.Data
     public class ProjectConfig : ScriptableObject, ILoadableAsset
     {
         public ItemsConfig Items;
+        public CurrencyConfig Currency;
     }
 }

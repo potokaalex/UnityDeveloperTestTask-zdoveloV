@@ -1,12 +1,13 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Client.Code.Game.UI.Elements.Currency
+namespace Client.Code.Common.UI.Currency
 {
     [Serializable]
     public class CurrencyViewData
     {
-        public long Value;
         public Sprite Icon;
+        public int Value;
+        public string Suffix;
     }
 }

@@ -45,8 +45,7 @@ namespace Client.Code.Game.UI.Elements.Upgrades.Window
         {
             var data = _provider.Items[type];
             var item = _instantiator.InstantiatePrefabForComponent<UpgradeItemView>(data.Prefab, _window.ItemsRoot);
-            //item.Initialize(data);
-            //item.Price.Initialize(data.Price);
+            item.Initialize(data);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Client.Code.Common.Data;
+using Client.Code.Common.Services;
 using Client.Code.Common.Services.Assets;
 using Client.Code.Common.Services.Assets.Base;
 using UnityEngine;
@@ -14,6 +15,7 @@ namespace Client.Code.Common.Infrastructure
         {
             BindAssets();
 
+            Container.Bind<CurrencyDataFactory>().AsSingle();
             Container.BindInterfacesTo<Bootstrapper>().AsSingle();
         }
 

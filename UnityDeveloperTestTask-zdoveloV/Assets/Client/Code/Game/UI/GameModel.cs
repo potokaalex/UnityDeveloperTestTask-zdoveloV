@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
 using Client.Code.Common.Data.Currency;
 using Client.Code.Common.Data.Items;
-using Client.Code.Game.Data;
-using Client.Code.Game.UI.Elements.Upgrades.Item;
 using Client.Code.Game.UI.Elements.Upgrades.Window;
 
 namespace Client.Code.Game.UI

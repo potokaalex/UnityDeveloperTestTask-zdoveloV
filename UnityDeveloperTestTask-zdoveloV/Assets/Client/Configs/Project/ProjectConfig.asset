@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: ProjectConfig
   m_EditorClassIdentifier: 
   Items: {fileID: 11400000, guid: e6fc893f6c98b9343bed3c2f2b553406, type: 2}
+  Currency: {fileID: 11400000, guid: 7846347242737bf40898ba3e75faab38, type: 2}
