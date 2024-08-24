@@ -1,5 +1,6 @@
 ﻿using Client.Code.Game.Services.Assets;
 using Client.Code.Game.UI;
+using Client.Code.Game.UI.Factory;
 using Zenject;
 
 namespace Client.Code.Game.Infrastructure
@@ -18,7 +19,7 @@ namespace Client.Code.Game.Infrastructure
         public void Initialize()
         {
             _assetsLoader.Load();
-            _uiFactory.CreateCanvas();
+            _uiFactory.Create();
         }
     }
 }

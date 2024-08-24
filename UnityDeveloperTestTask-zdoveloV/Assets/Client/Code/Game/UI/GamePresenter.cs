@@ -1,26 +1,20 @@
-﻿using System.Collections.Generic;
-using Client.Code.Common.UI.Base.Window;
-using Client.Code.Common.UI.Base.Window.Factory;
-using Client.Code.Common.UI.WindowControlButton;
+﻿using Client.Code.Common.UI.WindowControlButton;
+using Client.Code.Game.UI.Factory;
 
 namespace Client.Code.Game.UI
 {
     public class GamePresenter : IWindowControlButtonHandler
     {
-        private readonly Dictionary<WindowType, IWindowFactory> _windowFactories = new();
+        private readonly GameWindowsFactory _windowsFactory;
 
-        public GamePresenter(List<IWindowFactory> windowsFactories)
-        {
-            foreach (var factory in windowsFactories)
-                _windowFactories.Add(factory.Type, factory);
-        }
-        
+        public GamePresenter(GameWindowsFactory windowsFactory) => _windowsFactory = windowsFactory;
+
         public void Handle(WindowControlButton button)
         {
             if (button.ControlType == WindowControlButtonType.Open)
-                _windowFactories[button.WindowType].Create();
+                _windowsFactory.Create(button.WindowType);
             else if (button.ControlType == WindowControlButtonType.Close)
-                _windowFactories[button.WindowType].Destroy();
+                _windowsFactory.Destroy(button.WindowType);
         }
     }
 }

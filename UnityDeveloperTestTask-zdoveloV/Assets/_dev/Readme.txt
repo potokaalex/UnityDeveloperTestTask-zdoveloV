@@ -1,8 +1,12 @@
-со шрифтом не угадал.
+ui начинает быть слишком сложным.
+мне не нравятся фабрики.
+gamePresenter -> concreteFactory -> gameFactory
 
 TODO:
     GameCanvas:
-        Create/Destroy logic
+        create upgrades items
+        coins
+        purchase items
         PresenterLogic
         ViewLogic: animations
         Optimizations: ui components enable/disable, textures import, font import.

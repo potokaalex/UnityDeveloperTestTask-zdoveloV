@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Client.Code.Common.UI.Base.Window;
 using Client.Code.Game.UI;
+using Client.Code.Game.UI.Elements;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
