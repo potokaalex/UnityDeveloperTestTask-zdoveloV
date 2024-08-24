@@ -1,8 +1,7 @@
-﻿using Client.Code.Common.UI.Base;
-using Client.Code.Common.UI.Base.Window;
+﻿using Client.Code.Common.UI.Elements.Windows;
 using Zenject;
 
-namespace Client.Code.Common.UI.WindowControlButton
+namespace Client.Code.Common.UI.Elements.Buttons.WindowControl
 {
     public class WindowControlButton : ButtonBase
     {
@@ -14,6 +13,6 @@ namespace Client.Code.Common.UI.WindowControlButton
         [Inject]
         public void Construct(IWindowControlButtonHandler handler) => _handler = handler;
 
-        private protected override void OnClick() => _handler.Handle(this);
+        protected override void OnClick() => _handler.Handle(this);
     }
 }

@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using Client.Code.Common.Data.Items;
-using Client.Code.Game.UI.Elements.Upgrades.Item;
-using Client.Code.Game.UI.Elements.Upgrades.Window;
+using Client.Code.Game.UI.Elements.Windows.Upgrades.Item;
+using Client.Code.Game.UI.Elements.Windows.Upgrades.Window;
 using UnityEngine;
 
-namespace Client.Code.Game.UI.Elements.Upgrades
+namespace Client.Code.Game.UI.Elements.Windows.Upgrades
 {
     public interface IUpgradesUIProvider
     {

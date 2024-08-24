@@ -2,7 +2,7 @@
 using Client.Code.Game.Services;
 using Client.Code.Game.Services.Assets;
 using Client.Code.Game.UI;
-using Client.Code.Game.UI.Elements.Upgrades.Window;
+using Client.Code.Game.UI.Elements.Windows.Upgrades.Window;
 using Client.Code.Game.UI.Factories;
 using Zenject;
 

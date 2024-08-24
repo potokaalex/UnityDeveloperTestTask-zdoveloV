@@ -1,9 +1,8 @@
-﻿using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Client.Code.Common.UI.Currency
+namespace Client.Code.Common.UI.Elements.Currency
 {
     public class CurrencyView : MonoBehaviour
     {

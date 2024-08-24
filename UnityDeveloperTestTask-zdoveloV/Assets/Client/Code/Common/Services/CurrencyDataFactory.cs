@@ -1,6 +1,6 @@
 ﻿using Client.Code.Common.Data.Currency;
 using Client.Code.Common.Services.Assets;
-using Client.Code.Common.UI.Currency;
+using Client.Code.Common.UI.Elements.Currency;
 
 namespace Client.Code.Common.Services
 {

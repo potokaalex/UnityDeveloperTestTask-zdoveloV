@@ -3,7 +3,7 @@ using Client.Code.Common.Data.Items;
 using Client.Code.Common.Services;
 using Client.Code.Common.Services.Assets;
 using Client.Code.Game.Services.Assets;
-using Client.Code.Game.UI.Elements.Upgrades.Item;
+using Client.Code.Game.UI.Elements.Windows.Upgrades.Item;
 
 namespace Client.Code.Game.Services
 {

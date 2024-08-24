@@ -1,12 +1,12 @@
 TODO:
     GameCanvas:
-        coins & currency
+        lock buttons
         purchase items
-        ViewLogic: animations
-        Refactoring: move data (?)
+        Animations
         Optimizations: ui components enable/disable, textures import, font import.
+        Setup projectSettings
         Platforms tests
-        doc`s
+        doc`s (?)
     InputService
     Change editor version
     Optional: GameEnvironmentDesign, localizations (en, ru)

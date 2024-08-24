@@ -1,9 +1,9 @@
 ﻿using Client.Code.Common.Data.Items;
-using Client.Code.Common.UI.Base.Window;
-using Client.Code.Game.UI.Elements.Upgrades.Item;
+using Client.Code.Common.UI.Elements.Windows;
+using Client.Code.Game.UI.Elements.Windows.Upgrades.Item;
 using Zenject;
 
-namespace Client.Code.Game.UI.Elements.Upgrades.Window
+namespace Client.Code.Game.UI.Elements.Windows.Upgrades.Window
 {
     public class UpgradesWindowFactory : IWindowFactory
     {
@@ -45,7 +45,7 @@ namespace Client.Code.Game.UI.Elements.Upgrades.Window
         {
             var data = _provider.Items[type];
             var item = _instantiator.InstantiatePrefabForComponent<UpgradeItemView>(data.Prefab, _window.ItemsRoot);
-            item.Initialize(data);
+            item.Initialize(data); //кнопки покупки нужно залочить!
         }
     }
 }

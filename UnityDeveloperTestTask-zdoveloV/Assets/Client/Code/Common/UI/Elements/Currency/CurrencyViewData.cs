@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Client.Code.Common.UI.Currency
+namespace Client.Code.Common.UI.Elements.Currency
 {
     [Serializable]
     public class CurrencyViewData

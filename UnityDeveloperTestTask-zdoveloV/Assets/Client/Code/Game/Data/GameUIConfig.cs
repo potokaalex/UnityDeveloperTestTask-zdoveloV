@@ -1,6 +1,6 @@
 ﻿using Client.Code.Game.UI.Elements;
-using Client.Code.Game.UI.Elements.Upgrades.Item;
-using Client.Code.Game.UI.Elements.Upgrades.Window;
+using Client.Code.Game.UI.Elements.Windows.Upgrades.Item;
+using Client.Code.Game.UI.Elements.Windows.Upgrades.Window;
 using Sirenix.OdinInspector;
 using UnityEngine;
 

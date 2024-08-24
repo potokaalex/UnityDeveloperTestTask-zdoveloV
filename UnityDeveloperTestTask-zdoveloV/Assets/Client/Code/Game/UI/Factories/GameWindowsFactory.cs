@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Client.Code.Common.UI.Base.Window;
+using Client.Code.Common.UI.Elements.Windows;
 
 namespace Client.Code.Game.UI.Factories
 {

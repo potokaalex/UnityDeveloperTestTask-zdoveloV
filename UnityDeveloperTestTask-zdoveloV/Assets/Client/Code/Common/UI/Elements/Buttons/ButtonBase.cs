@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace Client.Code.Common.UI.Base
+namespace Client.Code.Common.UI.Elements.Buttons
 {
     [RequireComponent(typeof(Button))]
     public abstract class ButtonBase : MonoBehaviour
@@ -16,6 +16,6 @@ namespace Client.Code.Common.UI.Base
 
         private void OnDestroy() => _baseButton.onClick.RemoveListener(OnClick);
 
-        private protected abstract void OnClick();
+        protected abstract void OnClick();
     }
 }

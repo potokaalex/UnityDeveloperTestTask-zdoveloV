@@ -2,9 +2,9 @@
 using Client.Code.Common.Data.Items;
 using Client.Code.Game.Services;
 using Client.Code.Game.Services.Assets;
-using Client.Code.Game.UI.Elements.Upgrades;
-using Client.Code.Game.UI.Elements.Upgrades.Item;
-using Client.Code.Game.UI.Elements.Upgrades.Window;
+using Client.Code.Game.UI.Elements.Windows.Upgrades;
+using Client.Code.Game.UI.Elements.Windows.Upgrades.Item;
+using Client.Code.Game.UI.Elements.Windows.Upgrades.Window;
 using UnityEngine;
 
 namespace Client.Code.Game.UI

@@ -1,7 +1,7 @@
-﻿using Client.Code.Common.UI.Base.Window;
+﻿using Client.Code.Common.UI.Elements.Windows;
 using UnityEngine;
 
-namespace Client.Code.Game.UI.Elements.Upgrades.Window
+namespace Client.Code.Game.UI.Elements.Windows.Upgrades.Window
 {
     public class UpgradesWindow : WindowBase
     {

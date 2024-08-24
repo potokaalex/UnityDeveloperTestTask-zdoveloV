@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Client.Code.Common.UI.Base.Window
+namespace Client.Code.Common.UI.Elements.Windows
 {
     public abstract class WindowBase : MonoBehaviour
     {

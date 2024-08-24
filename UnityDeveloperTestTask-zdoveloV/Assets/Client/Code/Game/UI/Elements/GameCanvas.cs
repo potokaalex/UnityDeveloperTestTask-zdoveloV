@@ -1,4 +1,4 @@
-﻿using Client.Code.Common.UI.Currency;
+﻿using Client.Code.Common.UI.Elements.Currency;
 using UnityEngine;
 
 namespace Client.Code.Game.UI.Elements
