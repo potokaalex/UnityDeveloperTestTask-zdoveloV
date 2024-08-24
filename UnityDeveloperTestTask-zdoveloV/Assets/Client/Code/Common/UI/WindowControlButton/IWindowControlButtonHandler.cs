@@ -1,4 +1,4 @@
-﻿namespace Client.Code.Common.UI.Elements.Buttons.Window
+﻿namespace Client.Code.Common.UI.WindowControlButton
 {
     public interface IWindowControlButtonHandler
     {

@@ -1,5 +1,6 @@
 ﻿using Client.Code.Game.Services.Assets;
 using Client.Code.Game.UI;
+using Client.Code.Game.UI.Upgrades;
 using Zenject;
 
 namespace Client.Code.Game.Infrastructure
@@ -23,6 +24,8 @@ namespace Client.Code.Game.Infrastructure
         {
             Container.Bind<GameUIFactory>().AsSingle();
             Container.BindInterfacesTo<GamePresenter>().AsSingle();
+            Container.BindInterfacesAndSelfTo<GameWindowsFactory>().AsSingle();
+            Container.BindInterfacesTo<UpgradesWindowFactory>().AsSingle();
         }
     }
 }

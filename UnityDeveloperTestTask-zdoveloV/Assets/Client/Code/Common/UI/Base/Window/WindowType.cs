@@ -1,4 +1,4 @@
-﻿namespace Client.Code.Common.UI.Elements.Windows
+﻿namespace Client.Code.Common.UI.Base.Window
 {
     public enum WindowType
     {

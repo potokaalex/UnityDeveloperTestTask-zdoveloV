@@ -7,18 +7,20 @@ namespace Client.Code.Game.UI
     {
         private readonly IInstantiator _instantiator;
         private readonly GameAssetsProvider _assetsProvider;
+        private readonly GameWindowsFactory _windowsFactory;
 
-        public GameUIFactory(IInstantiator instantiator, GameAssetsProvider assetsProvider)
+        public GameUIFactory(IInstantiator instantiator, GameAssetsProvider assetsProvider, GameWindowsFactory windowsFactory)
         {
             _instantiator = instantiator;
             _assetsProvider = assetsProvider;
+            _windowsFactory = windowsFactory;
         }
 
         public void CreateCanvas()
         {
             var config = _assetsProvider.GetUI();
             var canvas = _instantiator.InstantiatePrefabForComponent<GameCanvas>(config.CanvasPrefab);
-            //этот канвас будет давать рут для окон.
+            _windowsFactory.Initialize(canvas);
         }
     }
 }

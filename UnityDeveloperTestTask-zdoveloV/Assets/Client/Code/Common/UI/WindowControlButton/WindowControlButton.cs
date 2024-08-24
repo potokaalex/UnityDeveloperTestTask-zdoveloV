@@ -1,7 +1,8 @@
-﻿using Client.Code.Common.UI.Elements.Windows;
+﻿using Client.Code.Common.UI.Base;
+using Client.Code.Common.UI.Base.Window;
 using Zenject;
 
-namespace Client.Code.Common.UI.Elements.Buttons.Window
+namespace Client.Code.Common.UI.WindowControlButton
 {
     public class WindowControlButton : ButtonBase
     {
