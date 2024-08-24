@@ -1,11 +1,9 @@
-﻿using System.Collections.Generic;
-using Client.Code.Common.UI.Base.Window;
-using Client.Code.Game.UI;
-using Client.Code.Game.UI.Elements;
+﻿using Client.Code.Game.UI.Elements;
+using Client.Code.Game.UI.Elements.Upgrades;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Client.Code.Game.Data
+namespace Client.Code.Game.UI
 {
     [CreateAssetMenu(menuName = "Configs/Game/UI", fileName = "GameUIConfig", order = 0)]
     public class GameUIConfig : SerializedScriptableObject

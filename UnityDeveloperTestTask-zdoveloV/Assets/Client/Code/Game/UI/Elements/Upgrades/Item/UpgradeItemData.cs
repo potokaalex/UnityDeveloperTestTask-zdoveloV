@@ -4,10 +4,10 @@ using UnityEngine;
 namespace Client.Code.Game.UI.Elements.Upgrades.Item
 {
     [Serializable]
-    public class UpgradeItemViewData
+    public class UpgradeItemData
     {
         public Sprite Icon;
+        public string Header;
         public string Description;
-        public string SubDescription;
     }
 }

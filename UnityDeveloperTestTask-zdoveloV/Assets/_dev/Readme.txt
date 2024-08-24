@@ -1,3 +1,5 @@
+где должны быть upgrades items data ? 
+
 TODO:
     GameCanvas:
         create upgrades items
@@ -9,4 +11,5 @@ TODO:
         Platforms tests
         doc`s
     InputService
+    Change editor version
     Optional: GameEnvironmentDesign

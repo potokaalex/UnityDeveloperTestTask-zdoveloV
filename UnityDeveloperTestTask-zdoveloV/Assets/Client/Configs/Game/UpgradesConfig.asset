@@ -15,11 +15,162 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 21300000, guid: a7e8948c44c400c4ea36ac2d0e819c4b, type: 3}
+    - {fileID: 21300000, guid: c4a4936761370334b8298805dceb077a, type: 3}
+    - {fileID: 21300000, guid: 9506a6778bc213c4da8e3a466da4f94c, type: 3}
+    - {fileID: 756281063, guid: 1166354de1ca15248932f38197c375f7, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
+    SerializationNodes:
+    - Name: ItemsData
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[Client.Code.Game.UI.Elements.Upgrades.UpgradeItemType,
+        Game],[Client.Code.Game.UI.Elements.Upgrades.Item.UpgradeItemData, Game]],
+        mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.EnumEqualityComparer`1[[Client.Code.Game.UI.Elements.Upgrades.UpgradeItemType,
+        Game]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 5
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 2|Client.Code.Game.UI.Elements.Upgrades.Item.UpgradeItemData, Game
+    - Name: Icon
+      Entry: 10
+      Data: 0
+    - Name: Header
+      Entry: 1
+      Data: Watch a tutorial
+    - Name: Description
+      Entry: 1
+      Data: Cottage Cheese is made faster
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 7
+      Data: 3|Client.Code.Game.UI.Elements.Upgrades.Item.UpgradeItemData, Game
+    - Name: Icon
+      Entry: 10
+      Data: 1
+    - Name: Header
+      Entry: 1
+      Data: Made with love
+    - Name: Description
+      Entry: 1
+      Data: Mozzarella profit x20
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 4|Client.Code.Game.UI.Elements.Upgrades.Item.UpgradeItemData, Game
+    - Name: Icon
+      Entry: 10
+      Data: 2
+    - Name: Header
+      Entry: 1
+      Data: Matured for longer
+    - Name: Description
+      Entry: 1
+      Data: Blue Cheese profit x3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 5|Client.Code.Game.UI.Elements.Upgrades.Item.UpgradeItemData, Game
+    - Name: Icon
+      Entry: 10
+      Data: 3
+    - Name: Header
+      Entry: 1
+      Data: Visit a university job fair
+    - Name: Description
+      Entry: 1
+      Data: +1 Cashier
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 7
+      Data: 6|Client.Code.Game.UI.Elements.Upgrades.Item.UpgradeItemData, Game
+    - Name: Icon
+      Entry: 10
+      Data: 0
+    - Name: Header
+      Entry: 1
+      Data: Bigger portion
+    - Name: Description
+      Entry: 1
+      Data: Cottage Cheese profit x5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   Prefab: {fileID: 6770180615195237265, guid: a35e67db2a3f17243a83b38c273091b4, type: 3}
   ItemPrefab: {fileID: 6144787887333614203, guid: 2b35527057255df4b8a48b105a728075, type: 3}

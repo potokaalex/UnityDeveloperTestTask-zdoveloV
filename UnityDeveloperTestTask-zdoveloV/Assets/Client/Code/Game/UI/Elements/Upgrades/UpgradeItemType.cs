@@ -1,4 +1,4 @@
-﻿namespace Client.Code.Game.Data
+﻿namespace Client.Code.Game.UI.Elements.Upgrades
 {
     public enum UpgradeItemType
     {
