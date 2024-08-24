@@ -17,7 +17,7 @@ namespace Client.Code.Game.UI.Elements.Upgrades.Item
             _headerText.SetText(data.Header);
             _descriptionText.SetText(data.Description);
             _icon.sprite = data.Icon;
-            _price.Initialize(data.Price);
+            _price.Set(data.Price);
         }
     }
 }

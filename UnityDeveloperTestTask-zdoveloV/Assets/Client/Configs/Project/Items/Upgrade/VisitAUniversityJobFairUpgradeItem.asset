@@ -18,4 +18,4 @@ MonoBehaviour:
   Price:
     Type: 0
     Value: 70
-    Modifier: 4
+    _modifier: 12

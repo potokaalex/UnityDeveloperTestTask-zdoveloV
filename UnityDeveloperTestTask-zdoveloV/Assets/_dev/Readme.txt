@@ -2,7 +2,6 @@ TODO:
     GameCanvas:
         coins & currency
         purchase items
-        PresenterLogic
         ViewLogic: animations
         Refactoring: move data (?)
         Optimizations: ui components enable/disable, textures import, font import.

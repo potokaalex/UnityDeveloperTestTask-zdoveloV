@@ -17,5 +17,5 @@ MonoBehaviour:
   Description: Mozzarella profit x20
   Price:
     Type: 0
-    Value: 8
-    Modifier: 4
+    Value: 8.4
+    _modifier: 12

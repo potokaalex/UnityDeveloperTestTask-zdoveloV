@@ -32,7 +32,7 @@ namespace Client.Code.Game.Infrastructure
 
             Container.BindInterfacesTo<GamePresenter>().AsSingle();
             Container.BindInterfacesAndSelfTo<GameUIProvider>().AsSingle();
-            Container.BindInterfacesTo<GameModel>().AsSingle();
+            Container.BindInterfacesAndSelfTo<GameModel>().AsSingle();
         }
     }
 }

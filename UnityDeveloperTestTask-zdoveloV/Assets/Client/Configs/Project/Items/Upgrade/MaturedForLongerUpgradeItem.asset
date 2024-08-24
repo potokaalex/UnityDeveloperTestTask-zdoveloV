@@ -17,5 +17,5 @@ MonoBehaviour:
   Description: Blue Cheese profit x3
   Price:
     Type: 0
-    Value: 13
-    Modifier: 4
+    Value: 13.2
+    _modifier: 12

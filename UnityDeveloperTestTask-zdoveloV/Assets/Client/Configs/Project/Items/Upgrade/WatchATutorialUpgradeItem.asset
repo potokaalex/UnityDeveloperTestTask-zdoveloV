@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: WatchATutorialUpgradeItem
   m_EditorClassIdentifier: 
   Icon: {fileID: 1360437257, guid: a7e8948c44c400c4ea36ac2d0e819c4b, type: 3}
-  Header: Bigger portion
-  Description: Cottage Cheese profit x5
+  Header: Watch a tutorial
+  Description: Cottage Cheese is made faster
   Price:
     Type: 0
-    Value: 78
-    Modifier: 4
+    Value: 7
+    _modifier: 12

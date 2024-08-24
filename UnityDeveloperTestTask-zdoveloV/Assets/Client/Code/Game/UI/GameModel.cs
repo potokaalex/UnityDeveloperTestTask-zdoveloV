@@ -2,13 +2,14 @@
 using Client.Code.Common.Data.Currency;
 using Client.Code.Common.Data.Items;
 using Client.Code.Game.UI.Elements.Upgrades.Window;
+using UniRx;
 
 namespace Client.Code.Game.UI
 {
     public class GameModel : IUpgradesWindowModel
     {
-        public CurrencyData PlayerCurrency = new() { Type = CurrencyType.Gold, Value = 70, Modifier = CurrencyModifierType.Trillions };
-        
+        public readonly ReactiveProperty<CurrencyData> Currency = new(new CurrencyData(CurrencyType.Gold, 70, CurrencyModifierType.Trillions));
+
         public List<ItemType> AvailableItems { get; } = new()
         {
             ItemType.WatchATutorial,

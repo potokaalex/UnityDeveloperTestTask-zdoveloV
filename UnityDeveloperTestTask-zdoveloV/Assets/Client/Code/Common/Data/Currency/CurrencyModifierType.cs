@@ -2,13 +2,14 @@
 {
     public enum CurrencyModifierType
     {
-        None = 0,
-        Thousands = 1, 
-        Millions = 2, 
-        Billions = 3, 
-        Trillions = 4,
-        Quadrillions = 5, 
-        Quintillions = 6, 
-        Sextillions = 7
+        //The values of the elements are exponential.
+        None = 1,
+        Thousands = 3, 
+        Millions = 6, 
+        Billions = 9, 
+        Trillions = 12,
+        Quadrillions = 15, 
+        Quintillions = 18, 
+        Sextillions = 21
     }
 }

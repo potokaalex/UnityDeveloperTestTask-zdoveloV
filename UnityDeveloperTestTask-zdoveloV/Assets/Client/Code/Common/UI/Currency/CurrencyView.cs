@@ -10,7 +10,7 @@ namespace Client.Code.Common.UI.Currency
         [SerializeField] private TextMeshProUGUI _text;
         [SerializeField] private Image _icon;
 
-        public void Initialize(CurrencyViewData data)
+        public void Set(CurrencyViewData data)
         {
             _text.SetText(data.Value + data.Suffix);
             _icon.sprite = data.Icon;

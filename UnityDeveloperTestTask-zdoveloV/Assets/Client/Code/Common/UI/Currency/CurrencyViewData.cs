@@ -7,7 +7,7 @@ namespace Client.Code.Common.UI.Currency
     public class CurrencyViewData
     {
         public Sprite Icon;
-        public int Value;
+        public double Value;
         public string Suffix;
     }
 }
