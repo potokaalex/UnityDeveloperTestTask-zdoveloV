@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e5bf68303f94c40831b0a4d8e643a77, type: 3}
-  m_Name: GameUIConfig
+  m_Script: {fileID: 11500000, guid: 7a89a5b9fd174d2f96bbe441f04b2186, type: 3}
+  m_Name: UpgradesConfig
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -21,5 +21,5 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  Upgrades: {fileID: 11400000, guid: 5e09aa25533bdf949b640a0469199e3e, type: 2}
-  CanvasPrefab: {fileID: 8852128740030207613, guid: 3608c326f8822ac42aab2a9ce36509a1, type: 3}
+  Prefab: {fileID: 6770180615195237265, guid: a35e67db2a3f17243a83b38c273091b4, type: 3}
+  ItemPrefab: {fileID: 6144787887333614203, guid: 2b35527057255df4b8a48b105a728075, type: 3}

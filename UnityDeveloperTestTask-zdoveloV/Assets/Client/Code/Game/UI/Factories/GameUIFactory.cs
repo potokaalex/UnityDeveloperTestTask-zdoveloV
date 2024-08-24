@@ -2,7 +2,7 @@
 using Client.Code.Game.UI.Elements;
 using Zenject;
 
-namespace Client.Code.Game.UI.Factory
+namespace Client.Code.Game.UI.Factories
 {
     public class GameUIFactory
     {

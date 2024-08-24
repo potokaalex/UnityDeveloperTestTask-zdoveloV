@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using Client.Code.Common.UI.Base.Window;
-using Client.Code.Common.UI.Base.Window.Factory;
 
-namespace Client.Code.Game.UI.Factory
+namespace Client.Code.Game.UI.Factories
 {
     public class GameWindowsFactory
     {

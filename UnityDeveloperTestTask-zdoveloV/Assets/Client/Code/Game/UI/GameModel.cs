@@ -12,6 +12,13 @@ namespace Client.Code.Game.UI
             UpgradeItemType.MadeWithLove,
             UpgradeItemType.MaturedForLonger,
             UpgradeItemType.VisitAUniversityJobFair,
+            UpgradeItemType.BiggerPortion,
+            
+            
+            UpgradeItemType.WatchATutorial,
+            UpgradeItemType.MadeWithLove,
+            UpgradeItemType.MaturedForLonger,
+            UpgradeItemType.VisitAUniversityJobFair,
             UpgradeItemType.BiggerPortion
         };
     }

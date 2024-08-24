@@ -1,5 +1,5 @@
 ﻿using Client.Code.Common.UI.WindowControlButton;
-using Client.Code.Game.UI.Factory;
+using Client.Code.Game.UI.Factories;
 
 namespace Client.Code.Game.UI
 {

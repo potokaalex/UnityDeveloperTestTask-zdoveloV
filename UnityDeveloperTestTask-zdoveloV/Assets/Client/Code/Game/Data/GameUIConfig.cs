@@ -10,7 +10,7 @@ namespace Client.Code.Game.Data
     [CreateAssetMenu(menuName = "Configs/Game/UI", fileName = "GameUIConfig", order = 0)]
     public class GameUIConfig : SerializedScriptableObject
     {
+        public UpgradesConfig Upgrades;
         public GameCanvas CanvasPrefab;
-        public Dictionary<WindowType, WindowBase> WindowsPrefabs;
     }
 }

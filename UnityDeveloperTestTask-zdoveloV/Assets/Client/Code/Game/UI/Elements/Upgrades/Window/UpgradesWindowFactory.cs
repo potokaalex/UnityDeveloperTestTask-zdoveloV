@@ -1,6 +1,6 @@
 ﻿using Client.Code.Common.UI.Base.Window;
-using Client.Code.Common.UI.Base.Window.Factory;
 using Client.Code.Game.Data;
+using Client.Code.Game.UI.Elements.Upgrades.Item;
 using Zenject;
 
 namespace Client.Code.Game.UI.Elements.Upgrades.Window
@@ -10,7 +10,7 @@ namespace Client.Code.Game.UI.Elements.Upgrades.Window
         private readonly IUpgradesWindowModel _model;
         private readonly IInstantiator _instantiator;
         private readonly IUpgradesUIProvider _provider;
-        private WindowBase _window;
+        private UpgradesWindow _window;
 
         public UpgradesWindowFactory(IUpgradesWindowModel model, IInstantiator instantiator, IUpgradesUIProvider provider)
         {
@@ -25,12 +25,10 @@ namespace Client.Code.Game.UI.Elements.Upgrades.Window
         {
             if (!_window)
             {
-                _window = _instantiator.InstantiatePrefabForComponent<WindowBase>(_provider.WindowPrefab, _provider.WindowRoot);
+                _window = _instantiator.InstantiatePrefabForComponent<UpgradesWindow>(_provider.WindowPrefab, _provider.WindowRoot);
                 _window.ForceClose();
             }
-
-            //TODO: setup window (connect it with model!)
-
+   
             foreach (var itemType in _model.AvailableItems)
                 CreateItem(itemType);
 
@@ -41,8 +39,8 @@ namespace Client.Code.Game.UI.Elements.Upgrades.Window
 
         private void CreateItem(UpgradeItemType type)
         {
-            //var data = _provider.GetItemData(type);
-            //var item = _instantiator.InstantiatePrefabForComponent<UpgradeItemUI>(data.Prefab);
+            var prefab = _provider.ItemPrefab;
+            var item = _instantiator.InstantiatePrefabForComponent<UpgradeItemView>(prefab, _window.ItemsRoot);
             //item.Initialize(data);
         }
     }

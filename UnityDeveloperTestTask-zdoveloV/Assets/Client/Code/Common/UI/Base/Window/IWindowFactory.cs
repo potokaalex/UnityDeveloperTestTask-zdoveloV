@@ -1,4 +1,4 @@
-﻿namespace Client.Code.Common.UI.Base.Window.Factory
+﻿namespace Client.Code.Common.UI.Base.Window
 {
     public interface IWindowFactory
     {

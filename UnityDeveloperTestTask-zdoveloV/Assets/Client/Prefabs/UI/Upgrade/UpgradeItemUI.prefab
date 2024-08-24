@@ -62,7 +62,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -687,10 +687,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 6804593335302640966}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 237.5, y: -37.5}
-  m_SizeDelta: {x: 139.57, y: 75}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5351367831672003720
 CanvasRenderer:
@@ -801,6 +801,7 @@ GameObject:
   - component: {fileID: 6303724305552692924}
   - component: {fileID: 7353550441132237012}
   - component: {fileID: 6121172233738857123}
+  - component: {fileID: 6144787887333614203}
   m_Layer: 5
   m_Name: UpgradeItemUI
   m_TagString: Untagged
@@ -894,6 +895,21 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &6144787887333614203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6153607250303358759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38300fc35c8c4b16bd90ba253cadf8a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _descriptionText: {fileID: 0}
+  _subDescriptionText: {fileID: 0}
+  _icon: {fileID: 0}
 --- !u!1 &9067888385227815144
 GameObject:
   m_ObjectHideFlags: 0
@@ -927,10 +943,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 6804593335302640966}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 130.215, y: -37.5}
-  m_SizeDelta: {x: 75, y: 75}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3770334009679607572
 CanvasRenderer:
