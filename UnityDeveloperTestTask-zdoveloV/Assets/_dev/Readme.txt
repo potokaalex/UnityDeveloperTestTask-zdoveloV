@@ -1,2 +1,0 @@
-TODO:
-    Change editor version
