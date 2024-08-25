@@ -28,10 +28,11 @@ namespace Client.Code.Game.UI.Factories
         {
             var prefab = _assetsProvider.UI.CanvasPrefab;
             var canvas = _instantiator.InstantiatePrefabForComponent<GameCanvas>(prefab);
+            _model.Initialize();
             CreateCurrency(canvas);
             _provider.Initialize(canvas.WindowsRoot);
         }
 
-        private void CreateCurrency(GameCanvas canvas) => _model.Currency.Subscribe(data => canvas.GoldCurrency.Set(_currencyDataFactory.CreateView(data)));
+        private void CreateCurrency(GameCanvas canvas) => _model.GoldCurrency.Subscribe(data => canvas.GoldCurrency.Set(_currencyDataFactory.CreateView(data)));
     }
 }

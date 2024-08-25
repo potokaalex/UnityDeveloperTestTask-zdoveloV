@@ -1,6 +1,7 @@
+ItemData refactoring ?
+
 TODO:
     GameCanvas:
-        lock buttons
         purchase items
         Animations
         Optimizations: ui components enable/disable, textures import, font import.

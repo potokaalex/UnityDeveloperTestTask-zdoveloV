@@ -1,6 +1,5 @@
-﻿using System.Collections.Generic;
-using Client.Code.Common.Data.Currency;
-using Client.Code.Common.Data.Items;
+﻿using Client.Code.Common.Data.Currency;
+using Client.Code.Game.UI.Elements.Windows.Upgrades.Item;
 using Client.Code.Game.UI.Elements.Windows.Upgrades.Window;
 using UniRx;
 
@@ -8,15 +7,23 @@ namespace Client.Code.Game.UI
 {
     public class GameModel : IUpgradesWindowModel
     {
-        public ReactiveProperty<CurrencyData> Currency => new(new CurrencyData(CurrencyType.Gold, 70, CurrencyModifierType.Trillions));
+        private readonly StoreService _storeService;
+        private readonly PlayerProvider _playerProvider;
 
-        public List<ItemType> AvailableItems { get; } = new()
+        public ReactiveProperty<CurrencyData> GoldCurrency { get; private set; }
+
+        public ReactiveCollection<ItemData> Items { get; private set; }
+
+        public GameModel(StoreService storeService, PlayerProvider playerProvider)
         {
-            ItemType.WatchATutorial,
-            ItemType.MadeWithLove,
-            ItemType.MaturedForLonger,
-            ItemType.VisitAUniversityJobFair,
-            ItemType.BiggerPortion
-        };
+            _storeService = storeService;
+            _playerProvider = playerProvider;
+        }
+
+        public void Initialize()
+        {
+            Items = _storeService.UpgradeItems;
+            GoldCurrency = _playerProvider.Account.GoldCurrency;
+        }
     }
 }

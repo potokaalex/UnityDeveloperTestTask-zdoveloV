@@ -31,13 +31,25 @@ namespace Client.Code.Common.Data.Currency
             return FromDouble(a.ToDouble() - b.ToDouble(), a.Type);
         }
 
+        public static bool operator <=(CurrencyData a, CurrencyData b)
+        {
+            AssertTypesMatch(a, b);
+            return a.ToDouble() <= b.ToDouble();
+        }
+
+        public static bool operator >=(CurrencyData a, CurrencyData b)
+        {
+            AssertTypesMatch(a, b);
+            return a.ToDouble() >= b.ToDouble();
+        }
+
         private double ToDouble() => Value * Math.Pow(10, (int)_modifier);
 
         private static CurrencyData FromDouble(double doubleValue, CurrencyType type)
         {
             if (doubleValue == 0)
                 return new CurrencyData(type, 0, CurrencyModifierType.None);
-            
+
             var log10 = (int)Math.Floor(Math.Log10(Math.Abs(doubleValue)));
             var exp = log10 - log10 % 3;
             var value = doubleValue / Math.Pow(10, exp);
