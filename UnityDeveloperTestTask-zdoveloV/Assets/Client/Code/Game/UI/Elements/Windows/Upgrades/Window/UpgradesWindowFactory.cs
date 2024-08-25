@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using Client.Code.Common.Data.Items;
-using Client.Code.Common.UI.Elements.Windows;
+using Client.Code.Common.UI.Elements.Windows.Base;
 using Client.Code.Game.UI.Elements.Windows.Upgrades.Item;
 using UniRx;
 using UnityEngine;

@@ -1,5 +1,5 @@
 ﻿using Client.Code.Common.Data.Items;
-using Client.Code.Common.UI.Elements.Buttons;
+using Client.Code.Common.UI.Elements.Buttons.Base;
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
@@ -29,7 +29,7 @@ namespace Client.Code.Game.UI.Elements.Buttons.Purchase
         public void Lock(bool isLocked)
         {
             BaseButton.IsLocked = isLocked;
-            
+
             if (isLocked)
             {
                 _image.sprite = _lockedImageSprite;

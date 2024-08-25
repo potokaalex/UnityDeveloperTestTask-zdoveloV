@@ -1,9 +1,7 @@
-﻿using Client.Code.Common.UI.Elements.Windows.Base;
-using Cysharp.Threading.Tasks;
-using Sirenix.OdinInspector;
+﻿using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Client.Code.Common.UI.Elements.Windows
+namespace Client.Code.Common.UI.Elements.Windows.Base
 {
     public abstract class WindowBase : SerializedMonoBehaviour
     {

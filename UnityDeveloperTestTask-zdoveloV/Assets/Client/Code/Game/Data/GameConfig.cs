@@ -1,6 +1,4 @@
-﻿using Client.Code.Common.Services.Assets;
-using Client.Code.Common.Services.Assets.Base;
-using Client.Code.Game.UI;
+﻿using Client.Code.Common.Services.Assets.Base;
 using UnityEngine;
 
 namespace Client.Code.Game.Data

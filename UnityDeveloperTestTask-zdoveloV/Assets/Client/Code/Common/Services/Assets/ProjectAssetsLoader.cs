@@ -18,6 +18,6 @@ namespace Client.Code.Common.Services.Assets
         {
             var config = _loader.Load<ProjectConfig>(AssetKey.Project);
             _provider.Initialize(config);
-        } 
+        }
     }
 }

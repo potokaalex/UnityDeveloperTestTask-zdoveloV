@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Client.Code.Common.UI.Elements.Windows;
+using Client.Code.Common.UI.Elements.Windows.Base;
 
 namespace Client.Code.Game.UI.Factories
 {
@@ -9,7 +9,7 @@ namespace Client.Code.Game.UI.Factories
 
         public GameWindowsFactory(List<IWindowFactory> factories)
         {
-            foreach (var factory in factories) 
+            foreach (var factory in factories)
                 _factories.Add(factory.Type, factory);
         }
 

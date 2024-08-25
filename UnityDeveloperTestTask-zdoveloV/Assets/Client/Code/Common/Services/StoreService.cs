@@ -1,16 +1,15 @@
 using System.Linq;
 using Client.Code.Common.Data.Items;
 using Client.Code.Common.Services.Assets;
-using Client.Code.Game.UI.Elements.Windows.Upgrades.Item;
+using Client.Code.Common.Services.Player;
 using UniRx;
 
-namespace Client.Code.Game.UI
+namespace Client.Code.Common.Services
 {
     public class StoreService
     {
         private readonly PlayerProvider _playerProvider;
         private readonly ProjectAssetsProvider _projectAssetsProvider;
-        private readonly ReactiveCollection<ItemData> _upgradeItems = new();
 
         public StoreService(PlayerProvider playerProvider, ProjectAssetsProvider projectAssetsProvider)
         {
@@ -18,13 +17,13 @@ namespace Client.Code.Game.UI
             _projectAssetsProvider = projectAssetsProvider;
         }
 
-        public ReactiveCollection<ItemData> UpgradeItems => _upgradeItems;
+        public ReactiveCollection<ItemData> UpgradeItems { get; } = new();
 
         public void Initialize()
         {
             var catalog = _projectAssetsProvider.Config.Items;
             foreach (var item in catalog.Upgrade)
-                _upgradeItems.Add(new ItemData(item.Key, IsCanBePurchased(item.Key)));
+                UpgradeItems.Add(new ItemData(item.Key, IsCanBePurchased(item.Key)));
         }
 
         public bool IsCanBePurchased(ItemType itemType)
@@ -40,16 +39,16 @@ namespace Client.Code.Game.UI
             var account = _playerProvider.Account;
             var catalog = _projectAssetsProvider.Config.Items;
             var catalogItem = catalog.Upgrade[itemType];
-            var itemToRemove = _upgradeItems.FirstOrDefault(item => item.Type == itemType);
+            var itemToRemove = UpgradeItems.FirstOrDefault(item => item.Type == itemType);
 
-            _upgradeItems.Remove(itemToRemove);
+            UpgradeItems.Remove(itemToRemove);
             account.GoldCurrency.Value -= catalogItem.Price;
             UpdateItems();
         }
 
         private void UpdateItems()
         {
-            foreach (var item in _upgradeItems) 
+            foreach (var item in UpgradeItems)
                 item.IsAvailable.Value = IsCanBePurchased(item.Type);
         }
     }

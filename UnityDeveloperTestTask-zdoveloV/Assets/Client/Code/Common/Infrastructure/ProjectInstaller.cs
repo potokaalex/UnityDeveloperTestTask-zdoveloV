@@ -2,7 +2,7 @@
 using Client.Code.Common.Services;
 using Client.Code.Common.Services.Assets;
 using Client.Code.Common.Services.Assets.Base;
-using Client.Code.Game.UI;
+using Client.Code.Common.Services.Player;
 using UnityEngine;
 using Zenject;
 
@@ -15,7 +15,7 @@ namespace Client.Code.Common.Infrastructure
         public override void InstallBindings()
         {
             BindAssets();
-            
+
             Container.Bind<PlayerProvider>().AsSingle();
             Container.Bind<StoreService>().AsSingle();
             Container.Bind<CurrencyDataFactory>().AsSingle();

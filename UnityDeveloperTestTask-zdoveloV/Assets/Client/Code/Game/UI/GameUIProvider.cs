@@ -13,7 +13,6 @@ namespace Client.Code.Game.UI
     {
         private readonly GameAssetsProvider _assetsProvider;
         private readonly UpgradeItemDataFactory _upgradeItemDataFactory;
-        private Dictionary<ItemType, UpgradeItemViewData> _upgradeItemsViewData;
 
         public GameUIProvider(GameAssetsProvider assetsProvider, UpgradeItemDataFactory upgradeItemDataFactory)
         {
@@ -25,12 +24,12 @@ namespace Client.Code.Game.UI
 
         public UpgradesWindow WindowPrefab => _assetsProvider.UI.UpgradesWindowPrefab;
 
-        public Dictionary<ItemType, UpgradeItemViewData> Items => _upgradeItemsViewData;
+        public Dictionary<ItemType, UpgradeItemViewData> Items { get; private set; }
 
         public void Initialize(Transform windowRoot)
         {
             WindowRoot = windowRoot;
-            _upgradeItemsViewData = _upgradeItemDataFactory.CreateViewData();
+            Items = _upgradeItemDataFactory.CreateViewData();
         }
     }
 }

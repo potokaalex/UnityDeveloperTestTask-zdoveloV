@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 
-namespace Client.Code.Common.UI.Elements.Buttons
+namespace Client.Code.Common.UI.Elements.Buttons.Base
 {
     [RequireComponent(typeof(CustomButton))]
     public abstract class ButtonBase : MonoBehaviour

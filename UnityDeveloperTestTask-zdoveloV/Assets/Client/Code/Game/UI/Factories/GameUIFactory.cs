@@ -1,5 +1,4 @@
-﻿using Client.Code.Common.Data.Currency;
-using Client.Code.Common.Services;
+﻿using Client.Code.Common.Services;
 using Client.Code.Game.Services.Assets;
 using Client.Code.Game.UI.Elements;
 using UniRx;

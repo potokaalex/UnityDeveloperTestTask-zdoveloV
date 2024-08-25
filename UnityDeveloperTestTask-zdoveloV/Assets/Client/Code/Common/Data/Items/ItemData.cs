@@ -1,7 +1,6 @@
-﻿using Client.Code.Common.Data.Items;
-using UniRx;
+﻿using UniRx;
 
-namespace Client.Code.Game.UI.Elements.Windows.Upgrades.Item
+namespace Client.Code.Common.Data.Items
 {
     public class ItemData
     {

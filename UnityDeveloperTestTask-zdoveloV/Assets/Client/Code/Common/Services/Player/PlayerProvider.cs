@@ -1,4 +1,4 @@
-﻿namespace Client.Code.Game.UI
+﻿namespace Client.Code.Common.Services.Player
 {
     public class PlayerProvider
     {

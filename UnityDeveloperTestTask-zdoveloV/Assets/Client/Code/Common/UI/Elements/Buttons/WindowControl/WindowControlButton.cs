@@ -1,4 +1,5 @@
-﻿using Client.Code.Common.UI.Elements.Windows;
+﻿using Client.Code.Common.UI.Elements.Buttons.Base;
+using Client.Code.Common.UI.Elements.Windows.Base;
 using Zenject;
 
 namespace Client.Code.Common.UI.Elements.Buttons.WindowControl
@@ -7,7 +8,7 @@ namespace Client.Code.Common.UI.Elements.Buttons.WindowControl
     {
         public WindowControlButtonType ControlType;
         public WindowType WindowType;
-        
+
         private IWindowControlButtonHandler _handler;
 
         [Inject]

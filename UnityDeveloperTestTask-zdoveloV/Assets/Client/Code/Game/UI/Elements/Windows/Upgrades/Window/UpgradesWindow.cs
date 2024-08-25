@@ -1,4 +1,4 @@
-﻿using Client.Code.Common.UI.Elements.Windows;
+﻿using Client.Code.Common.UI.Elements.Windows.Base;
 using UnityEngine;
 
 namespace Client.Code.Game.UI.Elements.Windows.Upgrades.Window

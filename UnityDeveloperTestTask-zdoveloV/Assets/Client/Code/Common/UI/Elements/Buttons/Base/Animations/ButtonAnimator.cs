@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace Client.Code.Common.UI.Elements.Buttons.Animations
+namespace Client.Code.Common.UI.Elements.Buttons.Base.Animations
 {
     [RequireComponent(typeof(CustomButton))]
     public class ButtonAnimator : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler, IPointerClickHandler

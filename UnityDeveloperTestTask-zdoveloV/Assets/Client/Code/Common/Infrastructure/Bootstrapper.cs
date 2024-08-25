@@ -1,5 +1,5 @@
-﻿using Client.Code.Common.Services.Assets;
-using Client.Code.Game.UI;
+﻿using Client.Code.Common.Services;
+using Client.Code.Common.Services.Assets;
 using Zenject;
 
 namespace Client.Code.Common.Infrastructure

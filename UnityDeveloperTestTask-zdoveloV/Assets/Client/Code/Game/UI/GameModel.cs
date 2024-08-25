@@ -1,5 +1,7 @@
 ﻿using Client.Code.Common.Data.Currency;
-using Client.Code.Game.UI.Elements.Windows.Upgrades.Item;
+using Client.Code.Common.Data.Items;
+using Client.Code.Common.Services;
+using Client.Code.Common.Services.Player;
 using Client.Code.Game.UI.Elements.Windows.Upgrades.Window;
 using UniRx;
 

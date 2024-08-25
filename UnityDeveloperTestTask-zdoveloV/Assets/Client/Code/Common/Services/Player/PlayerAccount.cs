@@ -1,7 +1,7 @@
 ﻿using Client.Code.Common.Data.Currency;
 using UniRx;
 
-namespace Client.Code.Game.UI
+namespace Client.Code.Common.Services.Player
 {
     public class PlayerAccount
     {
