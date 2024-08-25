@@ -30,13 +30,13 @@ namespace Client.Code.Game.UI.Elements.Buttons.Purchase
         {
             if (isLocked)
             {
-                BaseButton.interactable = false;
+                BaseButton.enabled = false;
                 _image.sprite = _lockedImageSprite;
                 _text.fontMaterial = _lockedTextMaterial;
             }
             else
             {
-                BaseButton.interactable = true;
+                BaseButton.enabled = true;
                 _image.sprite = _defaultImageSprite;
                 _text.fontMaterial = _defaultTextMaterial;
             }

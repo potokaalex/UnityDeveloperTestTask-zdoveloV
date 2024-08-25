@@ -1,6 +1,5 @@
 TODO:
     GameCanvas:
-        purchase items
         Animations
         Refactoring: itemData
         Optimizations: ui components enable/disable, textures import, font import.
