@@ -2,6 +2,7 @@
 using Client.Code.Common.Services;
 using Client.Code.Common.Services.Assets;
 using Client.Code.Common.Services.Assets.Base;
+using Client.Code.Common.Services.Input;
 using Client.Code.Common.Services.Player;
 using UnityEngine;
 using Zenject;
@@ -16,6 +17,7 @@ namespace Client.Code.Common.Infrastructure
         {
             BindAssets();
 
+            Container.Bind<InputFactory>().AsSingle();
             Container.Bind<PlayerProvider>().AsSingle();
             Container.Bind<StoreService>().AsSingle();
             Container.Bind<CurrencyDataFactory>().AsSingle();

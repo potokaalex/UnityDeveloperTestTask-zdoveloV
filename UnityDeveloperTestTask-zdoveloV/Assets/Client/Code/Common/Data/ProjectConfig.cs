@@ -1,6 +1,7 @@
 ﻿using Client.Code.Common.Data.Currency;
 using Client.Code.Common.Data.Items;
 using Client.Code.Common.Services.Assets.Base;
+using Client.Code.Common.Services.Input;
 using UnityEngine;
 
 namespace Client.Code.Common.Data
@@ -10,5 +11,6 @@ namespace Client.Code.Common.Data
     {
         public ItemsConfig Items;
         public CurrencyConfig Currency;
+        public InputObject InputPrefab;
     }
 }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4653690930402618643}
   - component: {fileID: 4763140119025129353}
   - component: {fileID: 5819221643042888254}
+  - component: {fileID: 2313402718303119241}
   m_Layer: 0
   m_Name: InputService
   m_TagString: Untagged
@@ -68,3 +69,15 @@ MonoBehaviour:
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
+--- !u!114 &2313402718303119241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5577658218963344370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9afadb6fac94125b58db46c028d5e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

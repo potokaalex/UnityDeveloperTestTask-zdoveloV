@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Items: {fileID: 11400000, guid: e6fc893f6c98b9343bed3c2f2b553406, type: 2}
   Currency: {fileID: 11400000, guid: 7846347242737bf40898ba3e75faab38, type: 2}
+  InputPrefab: {fileID: 2313402718303119241, guid: 5e201279537352d44bccd4f5765b2674, type: 3}
