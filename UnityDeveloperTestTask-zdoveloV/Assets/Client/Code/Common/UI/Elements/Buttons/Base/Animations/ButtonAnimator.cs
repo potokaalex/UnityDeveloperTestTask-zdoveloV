@@ -13,7 +13,7 @@ namespace Client.Code.Common.UI.Elements.Buttons.Animations
         [SerializeField] private float _animationDuration = 0.1f;
         private CustomButton _button;
         private Image _image;
-        private Tweener _currenTween;
+        private Tween _currenTween;
 
         private void Awake()
         {

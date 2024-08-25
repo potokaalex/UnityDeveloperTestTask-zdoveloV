@@ -572,6 +572,8 @@ GameObject:
   - component: {fileID: 6392877802006429697}
   - component: {fileID: 4865408935170912822}
   - component: {fileID: 7790243241018533190}
+  - component: {fileID: 2711684345907938299}
+  - component: {fileID: 7695125768183611257}
   - component: {fileID: 6770180615195237265}
   m_Layer: 0
   m_Name: UpgradesWindow
@@ -641,6 +643,33 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 55
+--- !u!225 &2711684345907938299
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5527632472382084601}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &7695125768183611257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5527632472382084601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94ae0d73b0764131ac8e37c80fe5ed03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animationDuration: 0.2
+  _minScale: 0.6
+  _transform: {fileID: 250267128327862363}
 --- !u!114 &6770180615195237265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -653,6 +682,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba99b8ffc9a6496aabd8e0f42e7f9455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _isAnimated: 1
+  _animator: {fileID: 7695125768183611257}
   ItemsRoot: {fileID: 1845890796116334791}
 --- !u!1 &6191407338987275194
 GameObject:
