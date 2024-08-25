@@ -467,7 +467,7 @@ GameObject:
   - component: {fileID: 9050789500955272058}
   - component: {fileID: 6625386254262366279}
   - component: {fileID: 2506559310095494329}
-  - component: {fileID: 5567586398575057395}
+  - component: {fileID: 5467918261982065124}
   - component: {fileID: 2080120646780322203}
   m_Layer: 5
   m_Name: OpenUpgradesButton
@@ -534,7 +534,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5567586398575057395
+--- !u!114 &5467918261982065124
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -543,7 +543,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3490239830575684185}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 732c0ba0c3cc4832ae0474c0511c75d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -578,6 +578,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+  IsLocked: 0
 --- !u!114 &2080120646780322203
 MonoBehaviour:
   m_ObjectHideFlags: 0

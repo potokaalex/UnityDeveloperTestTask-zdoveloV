@@ -5,19 +5,19 @@ using UnityEngine.UI;
 
 namespace Client.Code.Common.UI.Elements.Buttons.Animations
 {
-    [RequireComponent(typeof(Button))]
+    [RequireComponent(typeof(CustomButton))]
     public class ButtonAnimator : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler, IPointerClickHandler
     {
         [SerializeField] private Sprite _defaultSprite;
         [SerializeField] private Sprite _pressedSprite;
         [SerializeField] private float _animationDuration = 0.1f;
-        private Button _button;
+        private CustomButton _button;
         private Image _image;
         private Tweener _currenTween;
 
         private void Awake()
         {
-            _button = GetComponent<Button>();
+            _button = GetComponent<CustomButton>();
             _image = _button.image;
         }
 
@@ -27,19 +27,19 @@ namespace Client.Code.Common.UI.Elements.Buttons.Animations
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            if (_button.enabled)
+            if (!_button.IsLocked)
                 PlayDown();
         }
 
         public void OnPointerUp(PointerEventData eventData)
         {
-            if (_button.enabled)
+            if (!_button.IsLocked)
                 PlayUp();
         }
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            if (_button.enabled)
+            if (!_button.IsLocked)
                 PlayClick();
         }
 

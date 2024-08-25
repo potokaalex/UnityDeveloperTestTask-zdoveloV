@@ -3,17 +3,17 @@ using UnityEngine.UI;
 
 namespace Client.Code.Common.UI.Elements.Buttons
 {
-    [RequireComponent(typeof(Button))]
+    [RequireComponent(typeof(CustomButton))]
     public abstract class ButtonBase : MonoBehaviour
     {
-        private Button _baseButton;
+        private CustomButton _baseButton;
 
-        protected Button BaseButton
+        protected CustomButton BaseButton
         {
             get
             {
                 if (!_baseButton)
-                    _baseButton = gameObject.GetComponent<Button>();
+                    _baseButton = gameObject.GetComponent<CustomButton>();
                 return _baseButton;
             }
         }

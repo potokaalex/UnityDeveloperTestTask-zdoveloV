@@ -1,8 +1,8 @@
 TODO:
     GameCanvas:
-        Animations
-        Refactoring: itemData
+        Open window animations
         Optimizations: ui components enable/disable, textures import, font import.
+        Refactoring: itemData
         Platform simulators tests
         cleanup
     InputService

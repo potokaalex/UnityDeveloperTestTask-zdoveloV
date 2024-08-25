@@ -28,15 +28,15 @@ namespace Client.Code.Game.UI.Elements.Buttons.Purchase
 
         public void Lock(bool isLocked)
         {
+            BaseButton.IsLocked = isLocked;
+            
             if (isLocked)
             {
-                BaseButton.enabled = false;
                 _image.sprite = _lockedImageSprite;
                 _text.fontMaterial = _lockedTextMaterial;
             }
             else
             {
-                BaseButton.enabled = true;
                 _image.sprite = _defaultImageSprite;
                 _text.fontMaterial = _defaultTextMaterial;
             }
