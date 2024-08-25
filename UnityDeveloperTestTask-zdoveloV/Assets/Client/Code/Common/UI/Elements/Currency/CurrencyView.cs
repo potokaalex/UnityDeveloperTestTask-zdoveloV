@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,7 +12,7 @@ namespace Client.Code.Common.UI.Elements.Currency
 
         public void Set(CurrencyViewData data)
         {
-            _text.SetText(data.Value + data.Suffix);
+            _text.SetText(Math.Round(data.Value, 1) + data.Suffix);
             _icon.sprite = data.Icon;
         }
     }

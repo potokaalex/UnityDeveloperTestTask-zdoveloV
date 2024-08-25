@@ -1,13 +1,11 @@
-ItemData refactoring ?
-
 TODO:
     GameCanvas:
         purchase items
         Animations
+        Refactoring: itemData
         Optimizations: ui components enable/disable, textures import, font import.
-        Setup projectSettings
-        Platforms tests
-        doc`s (?)
+        Platform simulators tests
+        cleanup
     InputService
     Change editor version
     Optional: GameEnvironmentDesign, localizations (en, ru)

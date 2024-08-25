@@ -1,4 +1,5 @@
-﻿using Client.Code.Common.Services;
+﻿using Client.Code.Common.Data.Currency;
+using Client.Code.Common.Services;
 using Client.Code.Game.Services.Assets;
 using Client.Code.Game.UI.Elements;
 using UniRx;
@@ -33,6 +34,7 @@ namespace Client.Code.Game.UI.Factories
             _provider.Initialize(canvas.WindowsRoot);
         }
 
-        private void CreateCurrency(GameCanvas canvas) => _model.GoldCurrency.Subscribe(data => canvas.GoldCurrency.Set(_currencyDataFactory.CreateView(data)));
+        private void CreateCurrency(GameCanvas canvas) =>
+            _model.GoldCurrency.Subscribe(data => canvas.GoldCurrency.Set(_currencyDataFactory.CreateView(data)));
     }
 }

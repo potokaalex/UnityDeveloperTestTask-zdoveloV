@@ -8,8 +8,13 @@ namespace Client.Code.Game.UI
     public class GamePresenter : IWindowControlButtonHandler, IItemPurchaseButtonHandler
     {
         private readonly GameWindowsFactory _windowsFactory;
+        private readonly StoreService _storeService;
 
-        public GamePresenter(GameWindowsFactory windowsFactory) => _windowsFactory = windowsFactory;
+        public GamePresenter(GameWindowsFactory windowsFactory, StoreService storeService)
+        {
+            _windowsFactory = windowsFactory;
+            _storeService = storeService;
+        }
 
         public void Handle(WindowControlButton button)
         {
@@ -21,7 +26,8 @@ namespace Client.Code.Game.UI
 
         public void Handle(ItemType itemType)
         {
-            
+            if (_storeService.IsCanBePurchased(itemType))
+                _storeService.Purchase(itemType);
         }
     }
 }
